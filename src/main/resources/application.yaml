@@ -1,0 +1,17 @@
+spring:
+  profiles:
+    active: "@spring.profiles.active@"
+
+
+github:
+  username: "${GITHUB_USERNAME:}"
+  password: "${GITHUB_PASSWORD:}"
+
+management:
+  endpoint:
+    metrics:
+      enabled=true:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

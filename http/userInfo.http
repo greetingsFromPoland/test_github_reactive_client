@@ -1,0 +1,12 @@
+### OK
+GET http://localhost:8080/users/greetingsFromPoland
+Accept: application/json
+
+### Bad content type
+GET http://localhost:8080/users/greetingsFromPoland
+Accept: application/xml
+
+
+### User Not exists
+GET http://localhost:8080/users/no12dfsA2
+Accept: application/json
